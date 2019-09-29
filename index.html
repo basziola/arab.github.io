@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Abdulraheem basit | Portfolio</title>
+    <link href="vendors/css/normalize.css" rel="stylesheet">
+    <link href="vendors/css/grid.css" rel="stylesheet">
+    <link href="vendors/css/ionicons.min.css" rel="stylesheet">
+    <link href="resources/css/style.css" rel="stylesheet">
+    <link href="resources/css/query.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="row">
+            <nav>
+                <img alt="Abdulraheem-abdulbasit-logo" src="resources/images/svg/logo.svg">
+                <a href="#"><i class="ion-ios-menu"></i></a>
+                <div class="menu-large mobile-menu">
+                    <a class="green-button " href="#">CONTACT ME</a>
+                    <a class="orange-button" href="#">ABOUT ME</a>
+                </div>
+
+            </nav>
+
+        </div>
+        <div class="hero-box">
+            <div>
+                <p><img alt="active-status" src="resources/images/svg/tick.svg">
+                    I’M CURRENTLY AVAILABLE FOR WORK</p>
+
+                <h1>Hi, am Basziola
+                    <br>
+                    <span class="typer" id="main" data-words="UI & UX designer,Software Designer,Graphics Designer"
+                        data-delay="100" data-deleteDelay="2000"></span>
+                    <span class="cursor" data-owner="main"></span>
+                    <br>based in Nigeria.</h1>
+            </div>
+            <a class="action-button" href="#">LET’S TALK
+                <img alt="left-arrow" src="resources/images/svg/arrow.svg"></a>
+    </header>
+
+    <section>
+        <div class="row">
+
+            <div><img alt="app-design" src="resources/images/app-design.jpeg"></div>
+
+
+            <div><img alt="app-design" src="resources/images/mobile-app-ui.jpg"></div>
+
+
+            <div><img alt="app-design" src="resources/images/Zuckerberg.jpg"></div>
+
+            <div><img alt="app-design" src="resources/images/phone-money.jpg"></div>
+
+            <div><img alt="app-design" src="resources/images/app-design3.jpg"></div>
+
+            <div><img alt="app-design" src="resources/images/app-money.jpg"></div>
+
+        </div>
+
+    </section>
+    <div class="row">
+        <hr>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+                <ul class="footer-align">
+                    <li>
+                        <a href="#"><img alt="facebook-icon" src="resources/images/svg/fcebook-icon.svg"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img alt="linked-icon" src="resources/images/svg/linkedin-icon.svg"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img alt="twitter-icon" src="resources/images/svg/twitter-icon.svg"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img alt="googleplus-icon" src="resources/images/svg/googleplus-icon.svg"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img alt="youtube-icon" src="resources/images/svg/youtube-icon.svg"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col span-1-of-2">
+                <ul class="footer-align">
+                    <li>COPYRIGHT © <span id="year">2019</span> ABDULRAHEEEM BASIT</li>
+                    <li><img alt="kiwi-flower-icon" class="kiwi" src="resources/images/svg/kiwi-flower.svg"></li>
+
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+    <script src="vendors/js/typer.js"></script>
+    <script>
+
+        var menuIcon = document.querySelector('.ion-ios-menu');
+        var menu = document.querySelector('.mobile-menu');
+        menuIcon.addEventListener('click', function () {
+            menuIcon.classList.toggle('ion-ios-menu');
+            var m = menuIcon.classList.toggle('ion-ios-close');
+            m ? menu.style.display = 'block' : menu.style.display = 'none';
+        });
+    </script>
+</body>
+
+
+</html>
+
+<!-- 
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mysite - Just another wordpress site</title>
+    <link href="vendors/css/animate.css" rel="stylesheet">
+
+    <style>
+        /* colors: 
+        blue: rgba(19, 125, 230, 0.863);
+        black: #1b1b1b; */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Lato, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 16px;
+            letter-spacing: .2px;
+            color: #1b1b1b;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.750), rgba(0, 0, 0, 0.750)), url("C:/Users/Abdul Basit/Pictures/vlcsnap-2019-07-18-16h41m20s321.png");
+            background-attachment: fixed;
+            background-position: center;
+            color: white;
+            height: 100vh;
+
+        }
+
+        .row {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        nav ul {
+            list-style: none;
+            float: right;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 20px;
+            padding: 5px 0;
+
+        }
+
+        nav ul li a {
+            padding: 5px 0;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            border-bottom: 2px solid white;
+        }
+
+        .logo {
+            padding: 10px;
+        }
+
+        .logo-black {
+            display: none;
+        }
+
+        .sticky {
+            background-color: rgba(255, 255, 255, 0.952);
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 0 1px 4px #1b1b1ba2;
+            width: 100%;
+            z-index: 1;
+            height: 62px
+        }
+
+        .sticky ul li a {
+            color: #1b1b1b;
+            padding: 5px 5px 15px;
+            border-bottom: 2px solid transparent;
+        }
+
+        .sticky ul li a:hover {
+            border-bottom: 2px solid rgba(19, 125, 230, 0.863);
+
+        }
+
+        .sticky .logo {
+            display: none;
+        }
+
+        .sticky .logo-black {
+            width: 80px;
+            padding: 8px;
+            display: block;
+        }
+
+        .sticky ul {
+            margin-top: -30px;
+        }
+
+        .sticky ul li {
+            display: inline-block;
+            margin-top: -20px;
+        }
+
+
+
+        .call-to-action {
+            position: absolute;
+            width: 60%;
+            text-align: center;
+            font-size: 110%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        .call-to-action h1 {
+            font-weight: 100;
+            line-height: 100%;
+            font-size: 450%;
+            margin: 100px 0 25px;
+        }
+
+        .call-to-action p {
+            line-height: 160%;
+            padding-bottom: 80px;
+        }
+
+        .call-to-action a {
+            text-decoration: none;
+            color: white;
+            border: 2px solid white;
+            border-radius: 8px;
+            padding: 20px 30px;
+            transition: 1.4s ease-out;
+
+
+        }
+
+        .call-to-action a:hover {
+            background-color: rgba(19, 125, 230, 0.863);
+            border: 2px solid transparent;
+            transition: 1.4s ease;
+        }
+
+        section {
+            padding: 100px;
+        }
+
+        .featured-content {
+            width: 100%;
+        }
+
+        .featured-text {
+            float: left;
+            width: 50%;
+            padding: 10px 15px 0;
+            font-size: 110%;
+
+        }
+
+        .featured-text h2 {
+            font-size: 320%;
+            padding: 40px 0;
+            /* padding-left: 10px; */
+            line-height: 120%;
+        }
+
+
+        .featured-text p {
+            padding-bottom: 60px;
+            line-height: 170%;
+            columns: #2e2e2e;
+        }
+
+        .featured-text a {
+            text-decoration: none;
+            border: 2px solid #1b1b1b;
+            border-radius: 25px;
+            padding: 12px 20px;
+            color: #1b1b1b;
+            font-size: 115%;
+            transition: .9s ease-out;
+
+        }
+
+
+        .featured-text a:hover {
+            border: 2px solid transparent;
+            background-color: rgba(19, 125, 230, 0.863);
+            color: white;
+            transition: 1.2s ease-out;
+            box-shadow: 7px 1px 50px #1b1b1b79;
+        }
+
+        .featured-image {
+            float: right;
+            width: 50%;
+        }
+
+        .featured-image img {
+            width: 45%;
+            position: absolute;
+            right: 0;
+        }
+
+        .change-color {
+            background-color: rgba(19, 125, 230, 0.863);
+
+        }
+
+        .js--wp-2 {
+            opacity: 0;
+        }
+
+        .js--wp-2.animated {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="js--header-section">
+        <nav>
+            <div class="row">
+                <img src="C:/Users/Abdul Basit/Desktop/logo.png" alt="logo" class="logo">
+                <img src="C:/Users/Abdul Basit/Desktop/logo-black.png" alt="logo" class="logo-black">
+                <ul>
+                    <li><a href="#" class="js--scroll-to-home">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#" class="js--scroll-to-service">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <div class="call-to-action js--call-to-action">
+            <h1>Create <span class="typer" id="main"
+                    data-words="Stuning Filters With Ziola.,Rich WebApps With Ziola.,light Weight Websites With Ziola.,Dynamic Websites With Ziola.,Amazing Themes With Ziola."
+                    data-delay="115" data-deleteDelay="1000"></span>
+                <span class="cursor" data-owner="main"></span></h1>
+            <p>ziola offers the most interactive activity you can experience in urban and <br>natural surroundings and
+                also live happly.</p>
+
+            <a href="#" class="js--wp-1">Get Started >></a>
+        </div>
+    </header>
+
+    <section class="js--section">
+        <div class="featured-content">
+            <div class="featured-text">
+                <h2>Try it Yourself : )</h2>
+                <p>What makes design so alluring? We believes the answer is designers. That’s why we have made our
+                    entire focus on you – the designer. Your style, your ideas, your creativity. Go on – Try, share
+                    and design now!</p>
+                <a href="#">Take Photos</a>
+            </div>
+            <div class="featured-image">
+                <img src="C:/Users/Abdul Basit/Pictures/PICTURES/Pictures/PICTURES/image/IMG_20181025_222007_225.jpg"
+                    class="js--wp-2">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="featured-content">
+            <div class="featured-text">
+                <h2>Try it Yourself : )</h2>
+                <p>What makes design so alluring? We believes the answer is designers. That’s why we have made our
+                    entire focus on you – the designer. Your style, your ideas, your creativity. Go on – Try, share
+                    and design now!</p>
+                <a href="#">Take Photos</a>
+            </div>
+            <div class="featured-image">
+                <img src="C:/Users/Abdul Basit/Pictures/PICTURES/Pictures/PICTURES/image/IMG_20181025_222007_225.jpg"
+                    alt="">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="featured-content">
+            <div class="featured-text">
+                <h2>Try it Yourself : )</h2>
+                <p>What makes design so alluring? We believes the answer is designers. That’s why we have made our
+                    entire focus on you – the designer. Your style, your ideas, your creativity. Go on – Try, share
+                    and design now!</p>
+                <a href="#">Take Photos</a>
+            </div>
+            <div class="featured-image">
+                <img src="C:/Users/Abdul Basit/Pictures/PICTURES/Pictures/PICTURES/image/IMG_20181025_222007_225.jpg"
+                    alt="">
+            </div>
+        </div>
+    </section>
+    <section class="js--section-service">
+        <div class="featured-content">
+            <div class="featured-text">
+                <h2>Try it Yourself : )</h2>
+                <p>What makes design so alluring? We believes the answer is designers. That’s why we have made our
+                    entire focus on you – the designer. Your style, your ideas, your creativity. Go on – Try, share
+                    and design now!</p>
+                <a href="#">Take Photos</a>
+            </div>
+            <div class="featured-image">
+                <img src="C:/Users/Abdul Basit/Pictures/PICTURES/Pictures/PICTURES/image/IMG_20181025_222007_225.jpg"
+                    alt="">
+            </div>
+        </div>
+    </section>
+    <script src="vendors/js/jquery.min.js"></script>
+    <script src="vendors/js/typer.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
+</body>
+
+</html>
+
+ -->
