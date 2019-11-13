@@ -10,7 +10,7 @@ body { background-color: #dddddd; font-family: 'Dosis', sans-serif; font-size: 1
 /* --------------------------- */
 /* header */
 /* --------------------------- */
-nav { background-color: rgba(0, 0, 0, 0.705); position: fixed; top: 21px; width: 90%; padding: 8px;}
+nav { background-color: rgba(0, 0, 0, 0.705); position: absolute; top: 21px; width: 90%; padding: 8px;}
 
 nav img { height: 40px;cursor: pointer; margin:5px 0; }  nav a { float: right;} 
 .menu-large{margin-top:-55px;}
