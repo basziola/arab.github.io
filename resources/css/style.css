@@ -6,7 +6,7 @@ gray: #383838 */
 
 .row { margin: 0 auto; width:90%;}
 
-body { background-color: #dddddd; font-family: 'Dosis', sans-serif; font-size: 20px; color: #383838; }
+body { background-color: #dddddd; font-family: 'Dosis', sans-serif; font-size: 18px; font-weight:500; color: #383838; }
 /* --------------------------- */
 /* header */
 /* --------------------------- */
