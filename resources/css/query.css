@@ -33,5 +33,6 @@
 .hero-box img { height: 30px;}  .hero-box h1 {  font-size: 220%; letter-spacing: 0.15px;  } .hero-box p { font-size: 80%; }
     
     section .row  div {float:left;  width: 90%; margin-left:5%;  height: auto; box-shadow: 3px 3px 8px #888;}
+nav{position: fixed; width:100%;}
     
    }
